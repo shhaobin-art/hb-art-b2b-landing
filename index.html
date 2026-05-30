@@ -112,18 +112,18 @@
                     <h2 class="text-4xl font-bold mb-4">Start Your Inquiry</h2>
                     <p class="text-gray-400">Response within 12 hours. Dedicated account managers for B2B clients.</p>
                 </div>
-                <form action="#" method="POST" class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <form action="https://formspree.io/f/mlgvvadr" method="POST" class="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div>
                         <label class="block text-sm font-medium text-gray-300 mb-2">Company Name</label>
-                        <input type="text" placeholder="Your Company Ltd." class="w-full bg-white/10 border border-white/20 rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-500 transition">
+                        <input type="text" name="Company Name" required placeholder="Your Company Ltd." class="w-full bg-white/10 border border-white/20 rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-500 transition">
                     </div>
                     <div>
                         <label class="block text-sm font-medium text-gray-300 mb-2">Business Email</label>
-                        <input type="email" placeholder="contact@company.com" class="w-full bg-white/10 border border-white/20 rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-500 transition">
+                        <input type="email" name="email" required placeholder="contact@company.com" class="w-full bg-white/10 border border-white/20 rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-500 transition">
                     </div>
                     <div class="md:col-span-2">
                         <label class="block text-sm font-medium text-gray-300 mb-2">Message & Estimated Order Volume</label>
-                        <textarea rows="4" placeholder="Tell us about your requirements..." class="w-full bg-white/10 border border-white/20 rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-500 transition"></textarea>
+                        <textarea name="Message" rows="4" required placeholder="Tell us about your requirements..." class="w-full bg-white/10 border border-white/20 rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-500 transition"></textarea>
                     </div>
                     <div class="md:col-span-2">
                         <button type="submit" class="w-full bg-white text-black font-bold py-4 rounded-xl hover:bg-blue-600 hover:text-white transition duration-300">Submit Inquiry & Get Free Sample Info</button>
