@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://shhaobinart.com/sitemap.xml
