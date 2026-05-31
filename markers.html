@@ -53,6 +53,21 @@
       ]
     }
     </script>
+    <!-- Structured Data: FAQ -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        { "@type": "Question", "name": "What is the MOQ for wholesale art markers?", "acceptedAnswer": { "@type": "Answer", "text": "MOQ is flexible and depends on set size and packaging. Stock items can ship in small trial quantities, while OEM/private-label orders typically start from a few thousand sets. Contact us for current minimums and tiered pricing." } },
+        { "@type": "Question", "name": "Do you offer OEM and private-label markers?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. We provide full OEM/ODM services including custom ink colors, barrel printing, logo, custom case or display packaging, and private-label branding. Your brand, our factory." } },
+        { "@type": "Question", "name": "Are your markers certified safe for export to the USA and EU?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Our markers are EN71-3, ASTM D-4236 and REACH compliant, produced in a BSCI-audited factory, making them ready for retail in the USA, EU and UK." } },
+        { "@type": "Question", "name": "What is the difference between alcohol-based and water-based markers?", "acceptedAnswer": { "@type": "Answer", "text": "Alcohol-based markers blend smoothly, dry fast and are favored by designers and illustrators. Water-based markers are low-odor, easy to clean and ideal for kids and classrooms. We manufacture both, including dual-tip and refillable options." } },
+        { "@type": "Question", "name": "What is the lead time for a markers order?", "acceptedAnswer": { "@type": "Answer", "text": "Stock items dispatch quickly. Custom OEM orders typically take 25–35 days after artwork and sample approval, depending on quantity and packaging complexity." } },
+        { "@type": "Question", "name": "Can I get a sample before placing a bulk order?", "acceptedAnswer": { "@type": "Answer", "text": "Absolutely. We provide samples and a full product catalog for serious B2B buyers. Submit an inquiry with your requirements and our team will arrange sample details within 12 hours." } }
+      ]
+    }
+    </script>
 
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
@@ -66,11 +81,13 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between h-16 items-center">
                 <a href="/" class="text-2xl font-bold tracking-tighter text-black">H&B <span class="text-gray-400">ART</span></a>
-                <div class="hidden md:flex space-x-8 text-sm font-medium items-center">
-                    <a href="/#products" class="hover:text-blue-600 transition">Products</a>
+                <div class="hidden md:flex space-x-6 text-sm font-medium items-center">
                     <a href="/colored-pencils.html" class="hover:text-blue-600 transition">Colored Pencils</a>
-                    <a href="/markers.html" class="text-blue-600 font-semibold">Markers</a>
+                    <a href="/markers.html" class="text-purple-600 font-semibold">Markers</a>
                     <a href="/sketching-sets.html" class="hover:text-blue-600 transition">Sketching Sets</a>
+                    <a href="/acrylic-paint.html" class="hover:text-blue-600 transition">Acrylic</a>
+                    <a href="/watercolor-paint.html" class="hover:text-blue-600 transition">Watercolor</a>
+                    <a href="/oil-paint.html" class="hover:text-blue-600 transition">Oil</a>
                     <a href="#inquiry" class="bg-black text-white px-4 py-2 rounded-full hover:bg-gray-800 transition">Get a Quote</a>
                 </div>
             </div>
@@ -138,8 +155,41 @@
         </div>
     </section>
 
+    <!-- Product Range -->
+    <section class="py-24">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-14">
+                <span class="text-sm font-bold text-blue-600 uppercase tracking-wider">Full Product Range</span>
+                <h2 class="text-4xl font-bold mt-3 mb-4">One Factory, Every Marker Type</h2>
+                <p class="text-gray-500 max-w-2xl mx-auto text-lg">From classroom basics to professional design markers — source your entire range from a single reliable supplier.</p>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="border border-gray-100 rounded-3xl p-7 hover:shadow-2xl transition">
+                    <div class="text-3xl mb-4">🖊️</div>
+                    <h3 class="text-lg font-bold mb-2">Alcohol-Based Markers</h3>
+                    <p class="text-gray-500 text-sm leading-relaxed">Fast-drying, smooth-blending ink loved by designers and illustrators — rich, professional color saturation.</p>
+                </div>
+                <div class="border border-gray-100 rounded-3xl p-7 hover:shadow-2xl transition">
+                    <div class="text-3xl mb-4">💧</div>
+                    <h3 class="text-lg font-bold mb-2">Water-Based Markers</h3>
+                    <p class="text-gray-500 text-sm leading-relaxed">Low-odor, washable and safe — perfect for kids, classrooms and everyday coloring sets.</p>
+                </div>
+                <div class="border border-gray-100 rounded-3xl p-7 hover:shadow-2xl transition">
+                    <div class="text-3xl mb-4">✌️</div>
+                    <h3 class="text-lg font-bold mb-2">Dual-Tip Markers</h3>
+                    <p class="text-gray-500 text-sm leading-relaxed">Fine liner + broad brush in one barrel — versatile two-in-one sets that boost perceived retail value.</p>
+                </div>
+                <div class="border border-gray-100 rounded-3xl p-7 hover:shadow-2xl transition">
+                    <div class="text-3xl mb-4">♻️</div>
+                    <h3 class="text-lg font-bold mb-2">Refillable & Special Sets</h3>
+                    <p class="text-gray-500 text-sm leading-relaxed">Refillable bodies, metallic, pastel and 60/80/120+ mega sets to differentiate your shelf.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Specifications Table -->
-    <section id="specs" class="py-24">
+    <section id="specs" class="py-24 bg-gray-50">
         <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-14">
                 <h2 class="text-4xl font-bold mb-4">Product Specifications</h2>
@@ -216,6 +266,40 @@
         </div>
     </section>
 
+    <!-- Applications / Who Buys -->
+    <section class="py-24">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-14">
+                <span class="text-sm font-bold text-blue-600 uppercase tracking-wider">Applications</span>
+                <h2 class="text-4xl font-bold mt-3 mb-4">Who Sources Markers From Us</h2>
+                <p class="text-gray-500 max-w-2xl mx-auto text-lg">Trusted by buyers across retail, education and promotional channels worldwide.</p>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="bg-gray-50 rounded-3xl p-7"><div class="text-3xl mb-4">🛒</div><h3 class="text-lg font-bold mb-2">Retail & E-commerce Brands</h3><p class="text-gray-500 text-sm leading-relaxed">Amazon sellers, Shopify stores and big-box retailers needing private-label, retail-ready sets.</p></div>
+                <div class="bg-gray-50 rounded-3xl p-7"><div class="text-3xl mb-4">🎓</div><h3 class="text-lg font-bold mb-2">Schools & Art Education</h3><p class="text-gray-500 text-sm leading-relaxed">Safe, certified, washable sets for classrooms, art programs and educational distributors.</p></div>
+                <div class="bg-gray-50 rounded-3xl p-7"><div class="text-3xl mb-4">🎁</div><h3 class="text-lg font-bold mb-2">Gift & Stationery</h3><p class="text-gray-500 text-sm leading-relaxed">Premium cased and giftable sets for stationery chains, museum shops and seasonal promotions.</p></div>
+                <div class="bg-gray-50 rounded-3xl p-7"><div class="text-3xl mb-4">🎨</div><h3 class="text-lg font-bold mb-2">Designers & Illustrators</h3><p class="text-gray-500 text-sm leading-relaxed">High-saturation alcohol marker lines for design studios and specialty art-supply retailers.</p></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- OEM Process -->
+    <section class="py-24 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-14">
+                <span class="text-sm font-bold text-blue-600 uppercase tracking-wider">OEM / ODM</span>
+                <h2 class="text-4xl font-bold mt-3 mb-4">Launch Your Own Marker Brand</h2>
+                <p class="text-gray-500 max-w-2xl mx-auto text-lg">A simple, transparent 4-step process from idea to delivery.</p>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="bg-white rounded-3xl p-8"><div class="text-5xl font-bold text-blue-100 mb-3">01</div><h3 class="text-lg font-bold mb-2">Share Your Brief</h3><p class="text-gray-500 text-sm leading-relaxed">Tell us your target color count, ink type, tip style, packaging and budget. We advise on the best spec for your market.</p></div>
+                <div class="bg-white rounded-3xl p-8"><div class="text-5xl font-bold text-blue-100 mb-3">02</div><h3 class="text-lg font-bold mb-2">Sample & Approve</h3><p class="text-gray-500 text-sm leading-relaxed">We produce a pre-production sample with your logo and packaging for your sign-off before mass production.</p></div>
+                <div class="bg-white rounded-3xl p-8"><div class="text-5xl font-bold text-blue-100 mb-3">03</div><h3 class="text-lg font-bold mb-2">Mass Production</h3><p class="text-gray-500 text-sm leading-relaxed">Certified production with in-line QC. Typical lead time 25–35 days depending on quantity and packaging.</p></div>
+                <div class="bg-white rounded-3xl p-8"><div class="text-5xl font-bold text-blue-100 mb-3">04</div><h3 class="text-lg font-bold mb-2">Global Shipping</h3><p class="text-gray-500 text-sm leading-relaxed">FOB, CIF or DDP shipping to the USA, EU & UK with full export documentation handled for you.</p></div>
+            </div>
+        </div>
+    </section>
+
     <!-- Inquiry Section -->
     <section id="inquiry" class="py-24">
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 bg-black rounded-[3rem] p-12 lg:p-20 text-white relative overflow-hidden">
@@ -247,18 +331,48 @@
         </div>
     </section>
 
+    <!-- FAQ -->
+    <section class="py-24 bg-gray-50">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-14">
+                <span class="text-sm font-bold text-blue-600 uppercase tracking-wider">FAQ</span>
+                <h2 class="text-4xl font-bold mt-3 mb-4">Wholesale Markers — Common Questions</h2>
+            </div>
+            <div class="space-y-4">
+                <details class="group bg-white rounded-2xl p-6 border border-gray-100" open><summary class="flex justify-between items-center cursor-pointer font-bold text-lg list-none">What is the MOQ for wholesale art markers?<span class="text-blue-600 group-open:rotate-45 transition text-2xl">+</span></summary><p class="text-gray-500 mt-4 leading-relaxed">MOQ is flexible and depends on set size and packaging. Stock items can ship in small trial quantities, while OEM/private-label orders typically start from a few thousand sets. Contact us for current minimums and tiered pricing.</p></details>
+                <details class="group bg-white rounded-2xl p-6 border border-gray-100"><summary class="flex justify-between items-center cursor-pointer font-bold text-lg list-none">Do you offer OEM and private-label markers?<span class="text-blue-600 group-open:rotate-45 transition text-2xl">+</span></summary><p class="text-gray-500 mt-4 leading-relaxed">Yes. We provide full OEM/ODM services including custom ink colors, barrel printing, logo, custom case or display packaging, and private-label branding. Your brand, our factory.</p></details>
+                <details class="group bg-white rounded-2xl p-6 border border-gray-100"><summary class="flex justify-between items-center cursor-pointer font-bold text-lg list-none">Are your markers certified safe for the USA & EU?<span class="text-blue-600 group-open:rotate-45 transition text-2xl">+</span></summary><p class="text-gray-500 mt-4 leading-relaxed">Yes. Our markers are EN71-3, ASTM D-4236 and REACH compliant, produced in a BSCI-audited factory, making them ready for retail in the USA, EU and UK.</p></details>
+                <details class="group bg-white rounded-2xl p-6 border border-gray-100"><summary class="flex justify-between items-center cursor-pointer font-bold text-lg list-none">What's the difference between alcohol-based and water-based markers?<span class="text-blue-600 group-open:rotate-45 transition text-2xl">+</span></summary><p class="text-gray-500 mt-4 leading-relaxed">Alcohol-based markers blend smoothly, dry fast and are favored by designers. Water-based markers are low-odor, easy to clean and ideal for kids and classrooms. We manufacture both, including dual-tip and refillable options.</p></details>
+                <details class="group bg-white rounded-2xl p-6 border border-gray-100"><summary class="flex justify-between items-center cursor-pointer font-bold text-lg list-none">What is the lead time for a markers order?<span class="text-blue-600 group-open:rotate-45 transition text-2xl">+</span></summary><p class="text-gray-500 mt-4 leading-relaxed">Stock items dispatch quickly. Custom OEM orders typically take 25–35 days after artwork and sample approval, depending on quantity and packaging complexity.</p></details>
+                <details class="group bg-white rounded-2xl p-6 border border-gray-100"><summary class="flex justify-between items-center cursor-pointer font-bold text-lg list-none">Can I get a sample before placing a bulk order?<span class="text-blue-600 group-open:rotate-45 transition text-2xl">+</span></summary><p class="text-gray-500 mt-4 leading-relaxed">Absolutely. We provide samples and a full product catalog for serious B2B buyers. Submit an inquiry with your requirements and our team will arrange sample details within 12 hours.</p></details>
+            </div>
+        </div>
+    </section>
+
     <!-- Explore Other Products -->
-    <section class="pb-24">
+    <section class="pt-24 pb-24">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <h2 class="text-2xl font-bold mb-8 text-center">Explore Other Categories</h2>
-            <div class="grid md:grid-cols-2 gap-8">
-                <a href="/colored-pencils.html" class="bg-gray-50 rounded-3xl p-8 hover:shadow-xl transition flex items-center justify-between group">
-                    <div><h3 class="text-xl font-bold mb-1">Colored Pencils →</h3><p class="text-gray-500 text-sm">Soft-core artist pencils, 48–160 colors</p></div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <a href="/colored-pencils.html" class="bg-gray-50 rounded-3xl p-6 hover:shadow-xl transition flex items-center justify-between group">
+                    <div><h3 class="text-lg font-bold mb-1">Colored Pencils →</h3><p class="text-gray-500 text-sm">Soft-core artist pencils, 48–160 colors</p></div>
                     <span class="text-2xl group-hover:translate-x-1 transition">🖍️</span>
                 </a>
-                <a href="/sketching-sets.html" class="bg-gray-50 rounded-3xl p-8 hover:shadow-xl transition flex items-center justify-between group">
-                    <div><h3 class="text-xl font-bold mb-1">Sketching Sets →</h3><p class="text-gray-500 text-sm">Graphite & charcoal kits, 2H–12B</p></div>
+                <a href="/sketching-sets.html" class="bg-gray-50 rounded-3xl p-6 hover:shadow-xl transition flex items-center justify-between group">
+                    <div><h3 class="text-lg font-bold mb-1">Sketching Sets →</h3><p class="text-gray-500 text-sm">Graphite & charcoal kits, 2H–12B</p></div>
                     <span class="text-2xl group-hover:translate-x-1 transition">✏️</span>
+                </a>
+                <a href="/acrylic-paint.html" class="bg-gray-50 rounded-3xl p-6 hover:shadow-xl transition flex items-center justify-between group">
+                    <div><h3 class="text-lg font-bold mb-1">Acrylic Paint →</h3><p class="text-gray-500 text-sm">Fast-drying acrylic sets, 12–48 colors</p></div>
+                    <span class="text-2xl group-hover:translate-x-1 transition">🎨</span>
+                </a>
+                <a href="/watercolor-paint.html" class="bg-gray-50 rounded-3xl p-6 hover:shadow-xl transition flex items-center justify-between group">
+                    <div><h3 class="text-lg font-bold mb-1">Watercolor Paint →</h3><p class="text-gray-500 text-sm">Pan & tube sets, 12–48 colors</p></div>
+                    <span class="text-2xl group-hover:translate-x-1 transition">💧</span>
+                </a>
+                <a href="/oil-paint.html" class="bg-gray-50 rounded-3xl p-6 hover:shadow-xl transition flex items-center justify-between group">
+                    <div><h3 class="text-lg font-bold mb-1">Oil Paint →</h3><p class="text-gray-500 text-sm">Professional oil paint sets, 12–48 colors</p></div>
+                    <span class="text-2xl group-hover:translate-x-1 transition">🖌️</span>
                 </a>
             </div>
         </div>
@@ -278,6 +392,9 @@
                         <li><a href="/colored-pencils.html" class="hover:text-blue-600 transition">Colored Pencils</a></li>
                         <li><a href="/markers.html" class="hover:text-blue-600 transition">Markers</a></li>
                         <li><a href="/sketching-sets.html" class="hover:text-blue-600 transition">Sketching Sets</a></li>
+                        <li><a href="/acrylic-paint.html" class="hover:text-blue-600 transition">Acrylic Paint</a></li>
+                        <li><a href="/watercolor-paint.html" class="hover:text-blue-600 transition">Watercolor Paint</a></li>
+                        <li><a href="/oil-paint.html" class="hover:text-blue-600 transition">Oil Paint</a></li>
                     </ul>
                 </div>
                 <div>
