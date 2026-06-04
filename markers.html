@@ -246,45 +246,73 @@
             <div class="text-center mb-12">
                 <span class="text-sm font-bold text-purple-600 uppercase tracking-wider">Full Color Range</span>
                 <h2 class="text-4xl font-bold mt-3 mb-4">418-Color Swatch Card</h2>
-                <p class="text-gray-500 max-w-2xl mx-auto text-lg">Every color in our Acrylic Brush Marker range — numbered and named. Click the card to view full detail.</p>
+                <p class="text-gray-500 max-w-2xl mx-auto text-lg">Every color numbered and named — including an exclusive 48-color Metallic series. Click any panel to view full detail.</p>
             </div>
 
-            <!-- Swatch Thumbnail — click to open lightbox -->
-            <div class="flex justify-center">
-                <div class="relative group cursor-zoom-in max-w-3xl w-full" onclick="document.getElementById('swatchLightbox').classList.remove('hidden')">
-                    <img
-                        src="https://sc02.alicdn.com/kf/Af40a3a549b24470c8e2efafd84b800c3V.png"
-                        alt="H&B 418-Color Acrylic Brush Marker Swatch Card"
-                        class="w-full rounded-3xl shadow-2xl border border-gray-100 transition duration-300 group-hover:scale-[1.01] group-hover:shadow-purple-200"
-                    >
-                    <!-- Zoom hint overlay -->
-                    <div class="absolute inset-0 flex items-center justify-center rounded-3xl bg-black/0 group-hover:bg-black/20 transition duration-300">
-                        <span class="opacity-0 group-hover:opacity-100 transition duration-300 bg-white text-gray-900 font-bold px-6 py-3 rounded-full shadow-xl text-sm flex items-center gap-2">
-                            🔍 Click to view full size
-                        </span>
+            <!-- 4-panel swatch grid -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+
+                <!-- Panel A: Purple / Pink / Red -->
+                <div class="relative group cursor-zoom-in" onclick="openLightbox('https://sc02.alicdn.com/kf/Af243c14408864217b6e29c9ebb74142fN.png','Purple · Pink · Red · Orange — 100 colors')">
+                    <img src="https://sc02.alicdn.com/kf/Af243c14408864217b6e29c9ebb74142fN.png"
+                         alt="H&B Marker Swatch — Purple Pink Red"
+                         class="w-full rounded-2xl shadow-xl border border-gray-100 transition duration-300 group-hover:scale-[1.01]">
+                    <div class="absolute inset-0 flex items-end justify-center pb-4 rounded-2xl bg-gradient-to-t from-black/30 to-transparent opacity-0 group-hover:opacity-100 transition duration-300">
+                        <span class="bg-white text-gray-900 font-bold px-4 py-2 rounded-full text-xs shadow">🔍 Purple · Pink · Red · Orange</span>
                     </div>
                 </div>
+
+                <!-- Panel B: Yellow / Green -->
+                <div class="relative group cursor-zoom-in" onclick="openLightbox('https://sc02.alicdn.com/kf/A436b6d98f9f248b48faf84a7200afe97x.png','Yellow · Green · Earth Tones — 100 colors')">
+                    <img src="https://sc02.alicdn.com/kf/A436b6d98f9f248b48faf84a7200afe97x.png"
+                         alt="H&B Marker Swatch — Yellow Green"
+                         class="w-full rounded-2xl shadow-xl border border-gray-100 transition duration-300 group-hover:scale-[1.01]">
+                    <div class="absolute inset-0 flex items-end justify-center pb-4 rounded-2xl bg-gradient-to-t from-black/30 to-transparent opacity-0 group-hover:opacity-100 transition duration-300">
+                        <span class="bg-white text-gray-900 font-bold px-4 py-2 rounded-full text-xs shadow">🔍 Yellow · Green · Earth Tones</span>
+                    </div>
+                </div>
+
+                <!-- Panel C: Blue / Teal / Grey -->
+                <div class="relative group cursor-zoom-in" onclick="openLightbox('https://sc02.alicdn.com/kf/A767be1f347424c44af131e4c8d03b0fc2.png','Blue · Teal · Green · Grey — 110 colors')">
+                    <img src="https://sc02.alicdn.com/kf/A767be1f347424c44af131e4c8d03b0fc2.png"
+                         alt="H&B Marker Swatch — Blue Teal Grey"
+                         class="w-full rounded-2xl shadow-xl border border-gray-100 transition duration-300 group-hover:scale-[1.01]">
+                    <div class="absolute inset-0 flex items-end justify-center pb-4 rounded-2xl bg-gradient-to-t from-black/30 to-transparent opacity-0 group-hover:opacity-100 transition duration-300">
+                        <span class="bg-white text-gray-900 font-bold px-4 py-2 rounded-full text-xs shadow">🔍 Blue · Teal · Green · Grey</span>
+                    </div>
+                </div>
+
+                <!-- Panel D: Neutral / Metallic -->
+                <div class="relative group cursor-zoom-in" onclick="openLightbox('https://sc02.alicdn.com/kf/A9e5757575b614ced9c370f3fd8a80791P.png','Neutral · Brown · Black · 48 Metallic Colors — 108 colors')">
+                    <img src="https://sc02.alicdn.com/kf/A9e5757575b614ced9c370f3fd8a80791P.png"
+                         alt="H&B Marker Swatch — Neutral Metallic"
+                         class="w-full rounded-2xl shadow-xl border border-gray-100 transition duration-300 group-hover:scale-[1.01]">
+                    <div class="absolute inset-0 flex items-end justify-center pb-4 rounded-2xl bg-gradient-to-t from-black/30 to-transparent opacity-0 group-hover:opacity-100 transition duration-300">
+                        <span class="bg-white text-gray-900 font-bold px-4 py-2 rounded-full text-xs shadow">🔍 Neutral · Brown · 48 Metallic Colors ✨</span>
+                    </div>
+                </div>
+
             </div>
 
-            <!-- Caption -->
-            <p class="text-center text-gray-400 text-sm mt-6">418 colors · Numbered &amp; named · Acrylic Brush Marker series · OEM color selection available</p>
+            <p class="text-center text-gray-400 text-sm mt-6">418 colors total · Numbered &amp; named · Includes 48 exclusive Metallic colors · OEM color selection available</p>
         </div>
     </section>
 
     <!-- Lightbox Modal -->
-    <div id="swatchLightbox" class="hidden fixed inset-0 z-[999] bg-black/80 flex items-center justify-center p-4" onclick="this.classList.add('hidden')">
-        <div class="relative max-w-6xl w-full" onclick="event.stopPropagation()">
-            <!-- Close button -->
+    <div id="swatchLightbox" class="hidden fixed inset-0 z-[999] bg-black/85 flex items-center justify-center p-4" onclick="this.classList.add('hidden')">
+        <div class="relative max-w-3xl w-full" onclick="event.stopPropagation()">
             <button onclick="document.getElementById('swatchLightbox').classList.add('hidden')" class="absolute -top-12 right-0 text-white text-4xl font-light hover:text-gray-300 transition leading-none">&times;</button>
-            <!-- Full-size image -->
-            <img
-                src="https://sc02.alicdn.com/kf/Af40a3a549b24470c8e2efafd84b800c3V.png"
-                alt="H&B 418-Color Acrylic Brush Marker Swatch Card — Full View"
-                class="w-full rounded-2xl shadow-2xl"
-            >
-            <p class="text-center text-gray-400 text-sm mt-4">H&amp;B 418-Color Acrylic Brush Marker · Click outside to close</p>
+            <img id="lightboxImg" src="" alt="" class="w-full rounded-2xl shadow-2xl">
+            <p id="lightboxCaption" class="text-center text-gray-400 text-sm mt-4"></p>
         </div>
     </div>
+    <script>
+        function openLightbox(src, caption) {
+            document.getElementById('lightboxImg').src = src;
+            document.getElementById('lightboxCaption').textContent = caption;
+            document.getElementById('swatchLightbox').classList.remove('hidden');
+        }
+    </script>
 
     <!-- Why Choose Us -->
     <section class="py-24 bg-gray-50">
