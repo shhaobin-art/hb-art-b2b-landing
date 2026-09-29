@@ -305,6 +305,15 @@
                     <p class="text-gray-400">Response within 12 hours. Samples & catalog available for B2B clients.</p>
                 </div>
                 <form action="https://formspree.io/f/mlgvvadr" method="POST" class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <!-- Channel attribution (auto-filled by script at end of body) -->
+                    <input type="hidden" name="channel" value="Direct">
+                    <input type="hidden" name="utm_source" value="">
+                    <input type="hidden" name="utm_medium" value="">
+                    <input type="hidden" name="utm_campaign" value="">
+                    <input type="hidden" name="utm_content" value="">
+                    <input type="hidden" name="gclid" value="">
+                    <input type="hidden" name="referrer" value="">
+                    <input type="hidden" name="landing_page" value="">
                     <div>
                         <label class="block text-sm font-medium text-gray-300 mb-2">Company Name</label>
                         <input type="text" name="Company Name" required placeholder="Your Company Ltd." class="w-full bg-white/10 border border-white/20 rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-cyan-500 transition">
@@ -395,5 +404,42 @@
             </div>
         </div>
     </footer>
+
+<!-- Inquiry channel attribution: fills the hidden fields above before submit -->
+<script>
+(function () {
+  function getParam(name) {
+    try { return new URLSearchParams(window.location.search).get(name) || ''; }
+    catch (e) { return ''; }
+  }
+  function refHost() {
+    var r = document.referrer || '';
+    if (!r) return '';
+    try { return new URL(r).hostname.replace(/^www./, ''); } catch (e) { return r; }
+  }
+  var utmSource = getParam('utm_source');
+  var utmMedium = getParam('utm_medium');
+  var host = refHost();
+  var channel = utmSource
+    ? (utmMedium ? utmSource + ' / ' + utmMedium : utmSource)
+    : (host || 'Direct');
+  var values = {
+    channel: channel,
+    utm_source: utmSource,
+    utm_medium: utmMedium,
+    utm_campaign: getParam('utm_campaign'),
+    utm_content: getParam('utm_content'),
+    gclid: getParam('gclid'),
+    referrer: host,
+    landing_page: window.location.href
+  };
+  document.querySelectorAll('form[action^="https://formspree.io/"]').forEach(function (form) {
+    Object.keys(values).forEach(function (k) {
+      var el = form.querySelector('input[name="' + k + '"]');
+      if (el) { el.value = values[k]; }
+    });
+  });
+})();
+</script>
 </body>
 </html>
